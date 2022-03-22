@@ -1,0 +1,100 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+}
+
+.picture {
+    border-radius: 10px;
+    width: 300px;
+    margin: 25px;
+    border-radius: 10px;
+}
+main {
+    margin: auto;
+}
+
+.card {
+    background-color: hsl(216, 50%, 16%); 
+    border-radius: 15px;
+    max-width: 350px;
+}
+
+
+.icon {
+    margin: 0px 8px 0px 25px;
+}
+
+.icon-right {
+    margin: 0px 5px 0px 117px;
+}
+
+header {
+ color: hsl(0, 0%, 100%);
+ font-weight: 600;
+ font-size: 1.3rem;
+ margin: 0px 25px;
+}
+
+p {
+    color: #9aaecf;
+    font-weight: 400;
+    margin: 20px;
+}
+
+.left {
+    text-align: left;
+    color: hsl(178, 100%, 50%);
+    font-size: 0.9rem;
+    font-weight: 700;
+    vertical-align: top;
+}
+
+.right {
+    color: #9aaecf;
+    font-size: 0.95rem;
+    font-weight: 400;
+    float: right;
+    margin-right: 25px;
+}
+
+.avatar {
+max-width: 30px;
+border: 1px solid hsl(0, 0%, 100%);
+border-radius: 50%;
+margin-right: 15px;
+}
+
+.author {
+    border-top: 1px solid #9aaecf;
+    margin: 20px 25px 5px 25px;
+    padding: 15px 0 25px 0;
+    color: hsl(215, 51%, 70%);
+}
+
+.name {
+color: hsl(0, 0%, 100%);
+vertical-align: top;
+font-size: 0.9em;
+}
+
+.creation {
+    color: #9aaecf;
+    vertical-align: top;
+    font-size: 0.9em;
+}
+
+.attribution {
+    font-size: 11px; 
+    text-align: center;
+    background-color: hsl(217, 54%, 11%);
+    color: hsl(0, 0%, 100%);
+}
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
