@@ -1,0 +1,89 @@
+body {
+    background: hsl(185, 75%, 39%);
+    background-image: url('./images/bg-pattern-top.svg'), url('./images/bg-pattern-bottom.svg');
+    background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+    background-repeat: no-repeat no-repeat;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.profile-card {
+    /* position: relative; */
+    background: white;
+    margin: 0 auto;
+    border-radius: 10px;
+    max-width: 350px;
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-img {
+    border-radius: 50%;
+    max-width: 100px;
+    border: 5px solid white;
+    transform: translateY(-54%);
+}
+
+h1 {
+    font-size: 19px;
+    display: inline;
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+    padding: 0 10px 0 0;
+}
+
+.age {
+    color: hsl(227, 10%, 46%);
+    font-size: 20px;
+}
+
+.city {
+    text-align: center;
+    color: hsl(227, 10%, 46%);
+    font-size: 15px;
+    margin: 8px;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid lightgrey;
+    width: 100%;
+}
+
+.numbers {
+    display: block;
+    text-align: center;
+    width: 100%;
+    font-weight: 700;
+    font-size: 19px;
+    color: hsl(229, 23%, 23%);
+    padding: 15px 15px 5px 15px;
+}
+
+
+.desc {
+    display: block;
+    font-size: 10px;
+    color: hsl(227, 10%, 46%);
+}
