@@ -1,0 +1,182 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    /* width: 1440px; */
+
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 100px;
+}
+
+.models {
+    width: 247px;
+    max-width: 247px;
+    height: 438px;
+    max-height: 438px;
+    padding: 30px;
+
+}
+
+.sedans {
+    background: hsl(31, 77%, 52%);
+    border-radius: 8px 0 0 8px;
+}
+
+.suvs {
+    background: hsl(184, 100%, 22%);
+}
+
+.luxury {
+    background: hsl(179, 100%, 13%);
+    border-radius: 0 8px 8px 0;
+}
+
+h2 {
+    font-family: 'Big Shoulders Display', cursive;
+    color: hsl(0, 0%, 95%);
+    font-weight: 700;
+    font-variant-caps: all-small-caps;
+    font-size: 55px;
+    padding-left: 20px;
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.603);
+    padding: 20px;
+    line-height: 1.5rem;
+    font-weight: 400;
+    font-size: 0.92rem;
+}
+
+img {
+    margin: 20px;
+}
+
+.btn {
+    padding: 20px;
+    height: 8px;
+    width: 100px;
+    background: white;
+    display: flex;
+    margin: 60px 0 0 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+
+#btn-sedan {
+    color: hsl(31, 77%, 52%);
+}
+
+#btn-suvs {
+    color: hsl(184, 100%, 22%);
+}
+
+#btn-luxury {
+    color: hsl(179, 100%, 13%);
+}
+
+.btn:hover {
+    border: 1px solid yellowgreen;
+    background-color: aliceblue;
+    cursor: pointer;
+    text-shadow: 1px 1px 2px yellowgreen;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+
+@media (max-width: 375px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        width: 100%;
+    }
+
+    .models {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .attribution {
+        display: none;
+    }
+
+    .sedans,
+    .luxury {
+        border-radius: 0;
+    }
+
+    p {
+        font-size: 0.7rem;
+        line-height: normal;
+    }
+
+    .btn {
+        margin: 10px;
+    }
+
+}
+
+
+@media (max-width: 991px) {
+    .btn {
+        padding: 5px;
+        height: 10px;
+        width: fit-content;
+        margin: 5px;
+        font-size: 0.5rem;
+        /* position: sticky;
+        bottom: 0px; */
+    }
+
+    .models {
+        min-height: auto;
+        height: auto;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: centre;
+        /* position: relative;
+        border: 1px solid red; */
+    }
+
+    p {
+        font-size: 0.7rem;
+        line-height: normal;
+        padding: 5px;
+    }
+
+    h2 {
+        padding: 5px;
+    }
+
+    img {
+        margin: 5px;
+    }
+
+    .container {
+        padding: 100px 0 0 0;
+    }
+}
