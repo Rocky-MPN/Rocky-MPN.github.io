@@ -1,0 +1,144 @@
+body {
+    font-family: 'Karla', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: hsl(204, 43%, 93%);
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    color: hsl(179, 62%, 43%);
+    color: hsl(71, 73%, 54%);
+
+
+    color: hsl(204, 43%, 93%);
+    color: hsl(218, 22%, 67%);
+}
+
+main {
+    width: 632px;
+    height: 475px;
+    max-height: 475px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+
+section {
+    background-color: white;
+}
+
+
+.intro {
+    grid-column: 1 / 3;
+    grid-row: 1;
+    height: 218px;
+    max-height: 218px;
+    align-self: flex-start;
+    border-radius: 8px 8px 0 0;
+    padding: 0 50px;
+}
+
+.subscription {
+    grid-column: 1;
+    grid-row: 2;
+    background-color: rgba(43, 179, 177, 255);
+    align-self: flex-start;
+    height: 257px;
+    border-radius: 0 0 0 8px;
+    width: 318px;
+    max-width: 318px;
+}
+
+.whyus {
+    grid-column: 2;
+    grid-row: 2;
+    background-color: rgba(74, 190, 189, 255);
+    height: 257px;
+    border-radius: 0 0 8px 0;
+}
+
+h1 {
+    padding-top: 20px;
+    color: rgba(74, 190, 189, 255);
+    font-weight: 700;
+}
+
+h2 {
+    color: hsl(71, 73%, 54%);
+    font-size: 1.1rem;
+    padding-top: 5px;
+}
+
+p {
+    color: hsl(218, 22%, 67%);
+    line-height: 1.5rem;
+}
+
+span {
+    color: hsl(204, 43%, 93%);
+}
+
+.monthly-subs {
+    padding: 25px 50px 0 40px;
+    color: hsl(204, 43%, 93%);
+    font-size: 1.1rem;
+}
+
+.price {
+    padding: 23px 10px 0 40px;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.per-month {
+    color: rgba(106, 213, 214, 255);
+}
+
+.access {
+    display: block;
+    padding: 10px 0 20px 40px;
+}
+
+button {
+    background-color: rgba(191, 223, 50, 255);
+    /* padding: 0 50px 0 50px; */
+    width: 234px;
+    border: 0;
+    height: 48px;
+    border-radius: 8px;
+    color: #f2fdcc;
+    font-weight: 700;
+    font-size: 0.9rem;
+    margin: 10px 38px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.description {
+    padding: 5px 85px 0 40px;
+    color: #93ebe7;
+    font-size: 0.9rem;
+    line-height: normal;
+}
+
+.descr-text {
+    color: #93ebe7;
+    font-size: 0.9rem;
+    line-height: normal;
+    display: inline-block;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
