@@ -70,8 +70,25 @@ button {
     font-weight: 800;
 }
 
+#start {
+    background-color: chartreuse;
+    border: 2px solid purple;
+    color: purple;
+}
+
+#start:hover {
+    background-color: brown;
+    border: 1px solid chartreuse;
+    color: chartreuse;
+    cursor: pointer;
+}
+
 div {
     color: darkorchid;
     font-size: 2rem;
     font-weight: 800;
+}
+
+.remove-start-button {
+    display: none;
 }
