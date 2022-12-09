@@ -1,0 +1,13 @@
+.winner {
+    color: green;
+}
+
+.loser {
+    color: red;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
