@@ -7,7 +7,6 @@ html {
 }
 
 body {
-    margin: 0;
     font-size: 2rem;
     display: flex;
     flex: 1;
@@ -16,6 +15,7 @@ body {
 }
 
 .clock {
+    background-color: #f7f9f8;
     width: 30rem;
     height: 30rem;
     border: 20px solid white;
@@ -38,23 +38,56 @@ body {
     /* account for the height of the clock hands */
 }
 
-.hand {
-    width: 50%;
-    height: 6px;
-    background: black;
+.clock-face::before {
+    background-color: #000;
+    border-radius: 50%;
+    content: "";
+    height: 20px;
+    left: 46.5%;
     position: absolute;
+    top: 47.5%;
+    width: 20px;
+}
+
+.hand {
+    background: black;
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, .5);
+    height: 6px;
+    position: absolute;
+    right: 50%;
     top: 50%;
     transform-origin: 100%;
     transform: rotate(90deg);
-    transition: all 0.05s;
     transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
-}
-
-.min-hand {
-    background-color: red;
-
+    transition: all 0.05s;
+    width: 50%;
 }
 
 .hour-hand {
-    background-color: green;
+    border-bottom-left-radius: 0.5em;
+    border-top-left-radius: 0.5em;
+    height: 10px;
+    width: 40%;
+}
+
+
+.min-hand {
+    height: 5px;
+}
+
+.second-hand {
+    height: 2px;
+    background-color: rgb(139, 9, 9);
+    width: 54%;
+}
+
+.second-hand::before {
+    background-color: rgb(139, 9, 9);
+    border-radius: 50%;
+    content: "";
+    height: 10px;
+    left: 95.5%;
+    position: absolute;
+    top: -4px;
+    width: 10px;
 }
