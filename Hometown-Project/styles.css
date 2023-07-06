@@ -1,0 +1,195 @@
+/* page reset */
+html {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+
+/* pallette
+
+Charcol green: #264653
+Persian green: #2A9D8F
+Saffron: #E9C46A
+Sandy Brown: #F4A261
+Burnt Sienna: #E76F51
+
+*/
+
+body {
+    display: flex;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    background-color: #264653;
+    color: #2A9D8F;
+}
+
+#page-wrapper {
+    margin: 0 20px;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    width: 70vw;
+}
+
+header {
+    border: 1px solid black;
+    background-image: url("images/lublin.jpg");
+    background-size: cover;
+    width: 70vw;
+    height: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-shadow: 2px 2px 2px black;
+    border-radius: 15px 15px 0 0;
+}
+
+h1 {
+    font-size: 8rem;
+    text-transform: uppercase;
+    margin-top: 2px;
+    margin-bottom: 0;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 2rem;
+    text-shadow: 0 0 1px #264653;
+}
+
+h4 {
+    font-size: 1.3rem;
+    margin: 10px;
+}
+
+#crest {
+    width: 60px;
+}
+
+main {
+    background-color: white;
+}
+
+section {
+    display: flex;
+}
+
+
+.activity-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.activity-description {
+    text-align: justify;
+    padding: 0 20px;
+}
+
+
+.activity-image:hover {
+    cursor: pointer;
+}
+
+aside {
+    background-color: #E76F51;
+    color: #E9C46A;
+}
+
+#guide {
+    display: flex;
+    justify-content: center;
+    text-shadow: 0 0 1px #264653;
+}
+
+#guide-image {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin: 10px 20px;
+}
+
+#guide-image:hover {
+    border: 1px solid #264653;
+    cursor: pointer;
+}
+
+#guide-info {
+    width: 200px;
+    text-align: justify;
+}
+
+#guide-right-panel {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-icon {
+    width: 16px;
+}
+
+footer {
+    background-color: #F4A261;
+    font-size: 0.7rem;
+    color: #264653;
+    border-radius: 0 0 15px 15px;
+}
+
+footer p {
+    margin: 3px;
+}
+
+a {
+    color: #264653;
+}
+
+a:visited {
+    color: #264653;
+}
+
+
+/* Responsive layout */
+
+@media (max-width: 1156px) {
+
+    #crest {
+        display: none;
+    }
+}
+
+@media (max-width: 980px) {
+
+    h2 {
+        display: none;
+    }
+}
+
+@media (max-width: 718px) {
+
+    #page-wrapper {
+        width: 90vw;
+    }
+
+    section {
+        flex-direction: column;
+    }
+
+    header {
+        width: 90vw;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    #guide {
+        flex-direction: column;
+        align-items: center;
+    }
+}
