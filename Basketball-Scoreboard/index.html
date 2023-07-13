@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Scoreboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="page-wrapper">
+        <header>
+            <h1>Basketball Scoreboard</h1>
+        </header>
+
+        <main>
+            <div id="score-boards">
+                <div id="home-score" class="scores">
+                    <h2>Home</h2>
+                    <div class="score-display" id="home-score-display">00</div>
+                    <div class="buttons">
+                        <button class="home-add-1" onclick="homeAdd1()">+1</button>
+                        <button class="home-add-2" onclick="homeAdd2()">+2</button>
+                        <button class="home-add-3" onclick="homeAdd3()">+3</button>
+                        <button id="reset-home-score" onclick="resetHomeScore()">reset</button>
+                    </div>
+                </div>
+                <div id="guests-score" class="scores">
+                    <h2>Guests</h2>
+                    <div class="score-display" id="guests-score-display">00</div>
+                    <div class="buttons">
+                        <button class="guests-add-1" onclick="guestsAdd1()">+1</button>
+                        <button class="guests-add-2" onclick="guestsAdd2()">+2</button>
+                        <button class="guests-add-3" onclick="guestsAdd3()">+3</button>
+                        <button id="reset-guests-score" onclick="resetGuestsScore()">reset</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>This project has been created as part of <a href="https://scrimba.com/">Scrimba Frontend Developer Career
+                    Path</a> by <a href="https://github.com/Rocky-MPN">Rocky</a>.</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
