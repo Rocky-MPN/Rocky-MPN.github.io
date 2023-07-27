@@ -1,0 +1,142 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Karla', sans-serif;
+    background-color: #1C1C1C;
+    color: #FFF;
+}
+
+#page-wrapper {
+    background: #1F2937;
+    width: 550px;
+    height: 550px;
+    margin: auto;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    padding-left: 52px;
+    padding-top: 115px;
+}
+
+
+h1 {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 40px;
+    letter-spacing: -1px;
+}
+
+#random-pass {
+    color: #4ADF86;
+    display: block;
+}
+
+h2 {
+    color: #D5D4D8;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.password-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    background: #273549;
+    width: 211px;
+    height: 39px;
+    /* margin-left: 52px; */
+    color: #55F991;
+    padding: 0 2px;
+
+}
+
+#passwords-div {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0 52px;
+}
+
+button {
+    border-radius: 6px;
+    background: #10B981;
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    padding: 9px 17px 9px 15px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-left: 52px;
+    margin-right: 307px;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+}
+
+#line {
+    width: 446px;
+    height: 1px;
+    background: #2F3E53;
+    margin: 40px 52px;
+}
+
+.copy-icon {
+    font-size: 30px;
+}
+
+
+
+.copy-icon {
+    position: relative;
+    display: inline-block;
+}
+
+.copy-icon:hover {
+    cursor: pointer;
+}
+
+.copy-icon .tooltiptext {
+    visibility: hidden;
+    width: 80px;
+    background-color: #10B981;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 2px 0;
+    font-size: 10px;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -40px;
+}
+
+.copy-icon:hover .tooltiptext {
+    visibility: visible;
+}
+
+#pass-max-len {
+    margin: 10px 52px;
+    width: 446px;
+}
+
+#pass-len {
+    text-align: center;
+    margin: 0 0 5px 0;
+}
+
+nav {
+    text-align: center;
+}
