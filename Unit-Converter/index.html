@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unite Converter</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="page-wrapper">
+
+        <nav>
+            <h1>Metric/Imperial Unit Conversion</h1>
+            <input type="number" id="user-input" value="20">
+            <button id="convert-btn">Convert</button>
+        </nav>
+
+        <main>
+            <section>
+                <h2 class="unit">Length (Meter/Feet)</h2>
+                <p id="length"><span class="initial-value">20</span> meters =
+                    <span class="converted-value">65.62</span> feet |
+                    <span class="initial-value">20</span> feet = <span class="converted-value">6.10</span> meters
+                </p>
+            </section>
+
+            <section>
+                <h2 class="unit">Volume (Liters/Gallons)</h2>
+                <p id="volume"><span class="initial-value">20</span> liters = <span class="converted-value">5.28</span>
+                    gallons | <span class="initial-value">20</span> gallons = <span class="converted-value">75.76
+                        liters</span></p>
+            </section>
+
+            <section>
+                <h2 class="unit">Mass (Kilograms/Pounds)</h2>
+                <p id="mass"><span class="initial-value">20</span> kilograms = <span
+                        class="converted-value">44.08</span>
+                    pounds | <span class="initial-value">20</span> pounds = <span class="converted-value">9.07</span>
+                    kilograms</p>
+            </section>
+        </main>
+
+        <aside>
+            <span id="switch-mode">White mode / Dark mode</span>
+            <label class="switch">
+                <input type="checkbox" onclick="darkMode()">
+                <span class="slider round"></span>
+            </label>
+        </aside>
+
+        <footer>Created by <a href="https://github.com/Rocky-MPN">Rocky</a></footer>
+
+
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
