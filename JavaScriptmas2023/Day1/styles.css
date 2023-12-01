@@ -1,0 +1,46 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: url('background.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+main {
+    text-align: center;
+    margin-top: 2em;
+    border: 1px solid black;
+    background: #43291f;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 1px 1px 2px #fff, 0 0 25px #edcdcd, 0 0 5px #e29292;
+}
+
+h1,
+#counter {
+    text-shadow: 0px 1px 3px #000000;
+    color: #d90429;
+}
+
+h1 {
+    font-size: 1.2rem;
+}
+
+#counter,
+.icons {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+main:hover {
+    transform: scale(1.1) rotate(15deg);
+    cursor: pointer;
+}
